@@ -8,6 +8,7 @@ resource "aws_ssm_document" "session_manager_preferences" {
     "schemaVersion": "1.0",
     "description": "Document to hold regional settings for Session Manager",
     "sessionType": "Standard_Stream",
+    "UpdateMethod": "NewVersion",
     "inputs": {
         "s3BucketName": "",
         "s3KeyPrefix": "",
