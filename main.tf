@@ -6,7 +6,7 @@ resource "aws_ssm_document" "session_manager_preferences" {
   content = <<DOC
 {
     "schemaVersion": "1.0",
-    "description": "Document to hold regional settings for Session Manager",
+    "description": "Document to hold regional settings for SessionManager",
     "sessionType": "Standard_Stream",
     "inputs": {
         "s3BucketName": "",
